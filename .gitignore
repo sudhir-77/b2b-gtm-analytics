@@ -1,0 +1,15 @@
+.venv/
+venv/
+data/
+__pycache__/
+.cursor/
+mlruns/
+.pytest_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+*.pyc
+*.egg-info/
+results/coverage.json
+*.tmp
+.DS_Store

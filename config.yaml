@@ -1,0 +1,67 @@
+# Generative assumptions for the simulated B2B SaaS panel.
+# All analysis results are from this simulator, not from real customers.
+
+seed: 42
+n_accounts: 5000
+n_months: 24
+# Permanent log-seat shift once a staggered field play reaches an account.
+field_play_effect: 0.08
+control_fraction: 0.40
+treatment_cohorts: [6, 9, 12, 15, 18]
+trend_per_month: 0.01
+season_amp: 0.02
+noise_sigma: 0.025
+revenue_noise: 0.008
+usage_events_per_account_month: 16
+adoption_ramp_months: 6
+lgbm_n_estimators: 180
+forecast_n_estimators: 160
+llm_max_new_tokens: 220
+model_repo: HuggingFaceTB/SmolLM2-360M-Instruct
+# Pinned from the Hugging Face model card / LFS pointer for model.safetensors.
+model_sha256: e6bffe7435d7ddc10fd3b9a9efd429dafbacb1cb17015fb5562664e7532bf86e
+
+segments:
+  - name: enterprise
+    share: 0.18
+    log_seats_mean: 6.10
+    log_seats_sd: 0.08
+    usage_asymptote: 0.74
+    usage_sd: 0.05
+    touch_mean: 3.4
+    target_penetration: 0.62
+    price_per_seat: 95.0
+  - name: mid_market
+    share: 0.32
+    log_seats_mean: 4.85
+    log_seats_sd: 0.08
+    usage_asymptote: 0.47
+    usage_sd: 0.06
+    touch_mean: 2.6
+    target_penetration: 0.44
+    price_per_seat: 70.0
+  - name: smb
+    share: 0.35
+    log_seats_mean: 3.55
+    log_seats_sd: 0.08
+    usage_asymptote: 0.26
+    usage_sd: 0.05
+    touch_mean: 4.2
+    target_penetration: 0.30
+    price_per_seat: 40.0
+  - name: digital
+    share: 0.15
+    log_seats_mean: 3.25
+    log_seats_sd: 0.09
+    usage_asymptote: 0.68
+    usage_sd: 0.05
+    touch_mean: 1.1
+    target_penetration: 0.22
+    price_per_seat: 25.0
+
+quick:
+  n_accounts: 400
+  usage_events_per_account_month: 4
+  lgbm_n_estimators: 80
+  forecast_n_estimators: 80
+  llm_max_new_tokens: 48
