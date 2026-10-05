@@ -1,0 +1,45 @@
+{
+  "sample": {
+    "n_accounts": 5000,
+    "n_months": 24,
+    "duckdb_rows": 2533336
+  },
+  "retention": {
+    "nrr_12m": 1.1603519237053275,
+    "mean_monthly_nrr": 1.0112628360611844,
+    "mean_adoption": 0.70985,
+    "mean_adoption_pct": 70.985,
+    "mean_penetration": 0.4526926832302059,
+    "mean_penetration_pct": 45.26926832302059,
+    "median_penetration": 0.4374863304986184
+  },
+  "field_play": {
+    "truth": 0.08,
+    "truth_pct": 8.0,
+    "estimate": 0.07973345132481825,
+    "se": 0.0002634790885643818,
+    "ci_low": 0.07921703231123206,
+    "ci_high": 0.08024987033840444,
+    "relative_error": 0.003331858439771865,
+    "relative_error_pct": 0.3331858439771865,
+    "naive_estimate": 0.17610552494326637,
+    "naive_relative_error": 1.2013190617908296,
+    "naive_relative_error_pct": 120.13190617908296
+  },
+  "propensity": {
+    "lgbm_auroc": 0.9028613654764569,
+    "logistic_auroc": 0.723618067639372,
+    "auroc_lift": 0.17924329783708493
+  },
+  "forecast": {
+    "gbm_mape": 0.03631993256884448,
+    "gbm_mape_pct": 3.631993256884448,
+    "seasonal_naive_mape": 0.13834813285502148,
+    "seasonal_naive_mape_pct": 13.834813285502149,
+    "horizon_months": 3
+  },
+  "segmentation": {
+    "silhouette": 0.8279675829409978,
+    "k": 4
+  }
+}

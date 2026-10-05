@@ -91,7 +91,28 @@ These rows are written by `python run.py` from `results/metrics.json`.
 
 <!-- RESULTS_START -->
 
-Run `python run.py` to fill this table from `results/metrics.json`.
+| Criterion | Value | Threshold | Passed |
+|---|---:|---:|:---|
+| Field-play effect estimate (DiD) vs. simulated truth | 0.0033 | <= 0.15 | yes |
+| Expansion propensity AUROC on held-out months | 0.9029 | >= 0.75 | yes |
+| 3-month revenue forecast MAPE | 0.0363 | <= 0.08 | yes |
+| Segmentation silhouette score | 0.8280 | >= 0.25 | yes |
+| Numbers in the LLM summary that match computed tables | 1.0000 | >= 1.0 | yes |
+| Test coverage of src/ | 85.7802 | >= 70.0 | yes |
+
+Headline figures from the same file:
+
+| Figure | Value |
+|---|---:|
+| DiD estimate | 0.0797 |
+| DiD relative error | 0.0033 |
+| Naive relative error | 1.2013 |
+| LightGBM AUROC | 0.9029 |
+| Logistic AUROC | 0.7236 |
+| Forecast MAPE | 0.0363 |
+| Seasonal naive MAPE | 0.1383 |
+| Silhouette | 0.8280 |
+| Summary number match rate | 1.0000 |
 
 <!-- RESULTS_END -->
 

@@ -1,0 +1,9 @@
+{
+  "source": "llm",
+  "drafts_rejected": 0,
+  "model_loaded": true,
+  "drafts": [
+    "This simulated panel covers 5,000 accounts across 24 months. Twelve-month net revenue retention is 1.160. Mean feature adoption is 71.0 percent, and mean seat penetration is 45.3 percent. The staggered field play estimate is 0.080, which is 0.3 percent away from the simulated truth of 0.080. A naive before/after comparison is 120.1 percent away from that truth. LightGBM scores expansion propensity at 0.903 AUROC on held-out months, compared with a logistic baseline of 0.724. The three-month revenue forecast has MAPE of 3.6 percent, against 13.8 percent for the seasonal naive forecast. Segmentation silhouette is 0.828. Prioritize accounts the field has not yet worked when product usage is already high, and keep the never-treated accounts as the control group for the next readout."
+  ],
+  "canonical": "This simulated panel covers 5,000 accounts across 24 months. Twelve-month net revenue retention is 1.160. Mean feature adoption is 71.0 percent, and mean seat penetration is 45.3 percent. The staggered field play estimate is 0.080, which is 0.3 percent away from the simulated truth of 0.080. A naive before/after comparison is 120.1 percent away from that truth. LightGBM scores expansion propensity at 0.903 AUROC on held-out months, compared with a logistic baseline of 0.724. The three-month revenue forecast has MAPE of 3.6 percent, against 13.8 percent for the seasonal naive forecast. Segmentation silhouette is 0.828. Prioritize accounts the field has not yet worked when product usage is already high, and keep the never-treated accounts as the control group for the next readout."
+}
